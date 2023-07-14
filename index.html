@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="calculator">
+    <img src="images/calculator.png" alt="Calculator Image">
+    <div id="button-container">
+        <input type="text" id="display" readonly placeholder="00000000000000">
+        <div class="buttons">
+            <div class="button-row">
+                <a class="button" data-value="7"><span>7</span></a>
+                <a class="button" data-value="8"><span>8</span></a>
+                <a class="button" data-value="9"><span>9</span></a>
+                <a class="button custom" data-value="/"><span>&#247;</span></a>
+            </div>
+            <div class="button-row">
+                <a class="button" data-value="4"><span>4</span></a>
+                <a class="button" data-value="5"><span>5</span></a>
+                <a class="button" data-value="6"><span>6</span></a>
+                <a class="button custom" data-value="*"><span>&#215;</span></a>
+            </div>
+            <div class="button-row">
+                <a class="button" data-value="1"><span>1</span></a>
+                <a class="button" data-value="2"><span>2</span></a>
+                <a class="button" data-value="3"><span>3</span></a>
+                <a class="button custom" data-value="-"><span>-</span></a>
+            </div>
+            <div class="button-row">
+                <a class="button" data-value="0"><span>0</span></a>
+                <a class="button a" data-value="."><span>.</span></a>
+                <a id="equals"><span>=</span></a>
+                <a class="button custom" data-value="+"><span>+</span></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

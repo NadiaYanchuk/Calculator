@@ -1,0 +1,143 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+@font-face {
+    font-family: 'Font Name';
+    src: local('Font Name'),
+    url(../fonts/font.ttf);
+}
+
+body {
+    background-color: #EEEEEE;
+    overflow: hidden;
+    user-select: none;
+}
+
+#calculator {
+    position: relative;
+    width: 300px;
+    margin-top: 167px;
+    margin-left: 650px;
+}
+
+#calculator img {
+    display: block;
+    height: auto;
+}
+
+#button-container {
+    position: absolute;
+    top: 65px;
+    left: 140px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* INPUT */
+input[type="text"] {
+    border: none;
+    outline: none;
+}
+
+#display {
+    background-color: #02554E;
+    border-radius: 5px;
+    color: #74FFFD;
+    letter-spacing: 5px;
+    text-align: right;
+    font-family: 'Font Name', sans-serif;
+    width: 300px;
+    height: 65px;
+    font-size: 32px;
+
+}
+
+#display::placeholder {
+    color: #74FFFD;
+    opacity: 0.15;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 180px;
+}
+
+.button, #equals{
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    width: 58px;
+    height: 40px;
+    background-color: #343837;
+    border: 2px solid black;
+    border-radius: 16px;
+    color: #EEEEEE;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+}
+
+.button:active {
+    padding-bottom: 2px;
+    transform: translateY(-2px);
+    transition: transform 0.1s ease;
+}
+
+.button:active::before {
+    top: 0;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+}
+
+#equals::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+}
+
+.custom {
+    background-color: #448CCB;
+}
+
+#equals {
+    background-color: #BE3B1E;
+}
+
+#equals:active {
+    padding-bottom: 2px;
+    transform: translateY(-2px);
+    transition: transform 0.1s ease;
+}
+
+#equals:active::before {
+    top: 0;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+}
