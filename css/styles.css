@@ -1,14 +1,16 @@
 /* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+
 @font-face {
     font-family: 'Digital-7';
     src: local('Digital-7'),
     url(../fonts/font.ttf);
 }
-@font-face {
-    font-family: 'Dosis';
-    src: local('Dosis'),
-    url(../fonts/dosis.ttf);
-}
+/*@font-face {*/
+/*    font-family: 'Dosis';*/
+/*    src: local('Dosis'),*/
+/*    url(../fonts/dosis.ttf);*/
+/*}*/
 
 body {
     background-color: #EEEEEE;
