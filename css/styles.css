@@ -1,9 +1,13 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 @font-face {
-    font-family: 'Font Name';
-    src: local('Font Name'),
+    font-family: 'Digital-7';
+    src: local('Digital-7'),
     url(../fonts/font.ttf);
+}
+@font-face {
+    font-family: 'Dosis';
+    src: local('Dosis'),
+    url(../fonts/dosis.ttf);
 }
 
 body {
@@ -48,7 +52,7 @@ input[type="text"] {
     color: #74FFFD;
     letter-spacing: 5px;
     text-align: right;
-    font-family: 'Font Name', sans-serif;
+    font-family: 'Digital-7', sans-serif;
     width: 300px;
     height: 65px;
     font-size: 32px;
@@ -62,10 +66,10 @@ input[type="text"] {
 
 /* BUTTONS */
 .buttons {
-    margin-top: 180px;
+    margin-top: 75px;
 }
 
-.button, #equals{
+.button, #equals, #clear {
     position: relative;
     display: inline-block;
     font-size: 2em;
@@ -95,23 +99,15 @@ input[type="text"] {
 
 .button:active {
     padding-bottom: 2px;
-    transform: translateY(-2px);
     transition: transform 0.1s ease;
+}
+.button:active > span {
+    display: block;
+    transform: translateY(-2px);
 }
 
 .button:active::before {
     top: 0;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    border-top: 2px solid rgba(255, 255, 255, 0.4);
-    border-radius: 11px;
-}
-
-#equals::before {
-    content: '';
-    position: absolute;
-    top: 2px;
     left: 2px;
     right: 2px;
     bottom: 2px;
@@ -129,11 +125,62 @@ input[type="text"] {
 
 #equals:active {
     padding-bottom: 2px;
-    transform: translateY(-2px);
     transition: transform 0.1s ease;
 }
 
+#equals::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+}
+
+#equals:active > span {
+    display: block;
+    transform: translateY(-2px);
+}
+
 #equals:active::before {
+    top: 0;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+}
+
+#clear {
+    background-color: #4D4D4D;
+    margin-top: 65px;
+    height: 30px;
+    font-size: 24px;
+}
+
+#clear:active {
+    transition: transform 0.1s ease;
+}
+
+#clear::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+}
+
+#clear:active > span {
+    display: block;
+    transform: translateY(-2px);
+}
+
+#clear:active::before {
     top: 0;
     left: 2px;
     right: 2px;
